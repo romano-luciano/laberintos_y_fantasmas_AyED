@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1756518227 source:/home/ivanb/Documentos/Algoritmos de Programacion/tableroLaberintosFantasmas/main.c
+	"tablero.h"
+
+1756518210 source:/home/ivanb/Documentos/Algoritmos de Programacion/tableroLaberintosFantasmas/tablero.c
+	"tablero.h"
+	<stdlib.h>
+
+1756518228 /home/ivanb/Documentos/Algoritmos de Programacion/tableroLaberintosFantasmas/tablero.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	"macros.h"
+
+1756518226 /home/ivanb/Documentos/Algoritmos de Programacion/tableroLaberintosFantasmas/macros.h
+	<stdlib.h>
+

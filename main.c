@@ -1,19 +1,24 @@
 #include "tablero.h"
+#include "objetos.h"
 
 void mostrarCharEnPantalla(void *fp, void *elem);
 
 int main()
 {
+    srand(time(NULL));
     tConfigTablero config;
     tTablero tablero;
     tPosObjeto objetos;
 
     configuracionTableroCargar(&config,"configs.txt");
     tableroCrear(&tablero,&config);
-    tableroInicializar(&tablero, ' ');
+    tableroInicializar(&tablero, '.');
     tableroDibujarParedes(&tablero);
-    tableroEstablecerEntrada(&tablero);
-    tableroEstablecerSalida(&tablero);
+    tCoordenadas coordenadaEntrada = tableroEstablecerEntrada(&tablero);
+    tCoordenadas coordenadaSalida =  tableroEstablecerSalida(&tablero);
+    printf("Entrada: (%d , %d)\n",coordenadaEntrada.x,coordenadaEntrada.y);
+    printf("Salida: (%d , %d)\n",coordenadaSalida.x,coordenadaSalida.y);
+
 
     objetosCrear(&objetos,&config);
     tableroColocarObjetosAleatorio(&tablero, objetoParedesObtenerPunteroCoordenadas(&objetos),

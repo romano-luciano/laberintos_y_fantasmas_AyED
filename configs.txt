@@ -1,5 +1,5 @@
-filas: 50
-columnas: 50
+filas: 20
+columnas: 20
 vida_inicial: 2
 fantasmas: 4
 premios: 5

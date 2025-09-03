@@ -12,7 +12,7 @@
 #define ES_NUMERO(X) ((X) >= '0' && (X) <= '9')
 #define OBTENER_NUM_ALEATORIO(MIN,MAX,DST) \
     ((DST) = (rand() % ((MAX) - (MIN))) + (MIN))
-#define LUGAR_VACIO ' '
+#define LUGAR_VACIO '.'
 #define CARACTER_FANTASMA 'F'
 #define CARACTER_VIDA 'V'
 #define CARACTER_ENTRADA 'E'
@@ -20,5 +20,5 @@
 #define CARACTER_SALIDA 'S'
 #define CARACTER_PREMIO 'P'
 #define CARACTER_PARED '#'
-#define MAX_CANT_PAREDES 10
+#define MAX_CANT_PAREDES 50
 #define POSICION_ESTA_DISPONIBLE(X,FI,COL) ((X[(FI)][(COL)]) == LUGAR_VACIO ? 1 : 0)

@@ -31,9 +31,23 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="configuracionTablero.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="configuracionTablero.h" />
+		<Unit filename="coordenadas.h" />
+		<Unit filename="jugador.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="jugador.h" />
+		<Unit filename="macros.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="objetos.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="objetos.h" />
 		<Unit filename="tablero.c">
 			<Option compilerVar="CC" />
 		</Unit>
